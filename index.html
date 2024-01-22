@@ -46,17 +46,36 @@
   >
     <div class="h-full">
       <!--Nav-->
+            <style>
+            .title div {
+                transform: translateX(-66%);
+                transition: 0.3s ease all;
+            }
+            .title .bot {
+                opacity: 0;
+                transition: 0.3s ease all;
+            }
+            .title:hover div {
+                transform: translateX(0);
+            }
+            .title:hover .bot {
+                opacity: 1;
+            }
+            </style>
       <div class="w-full container mx-auto">
         <div class="w-full flex items-center justify-between">
           <a
-            class="flex items-center text-blue-400 no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
+            class="title flex items-center text-blue-400 no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
             href="#"
           >
-            Ro<span
-              class="bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 via-white to-yellow-500"
-              >Bee</span
-            >
-            <span class="text-red-400">X</span>
+                        Ro<span class="bot">bot</span>
+              <div>
+                <span
+                  class="bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 via-white to-yellow-500"
+                  >Bee</span
+                ><span class="flex-inline text-red-400">X</span>
+              </div>
+            </span>
           </a>
 
           <div class="flex w-1/2 justify-end content-center">
