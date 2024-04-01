@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Robeex</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+    <!--Replace with your tailwind.css once created-->
+    <link
+      href="https://unpkg.com/@tailwindcss/custom-forms/dist/custom-forms.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+      html {
+        font-family:
+          "Poppins",
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          "Helvetica Neue",
+          Arial,
+          "Noto Sans",
+          sans-serif,
+          "Apple Color Emoji",
+          "Segoe UI Emoji",
+          "Segoe UI Symbol",
+          "Noto Color Emoji";
+      }
+    </style>
+  </head>
+
+  <body
+    class="leading-normal tracking-normal text-indigo-400 m-6 bg-cover bg-fixed"
+    style="background-image: url(&quot;header.png&quot;)"
+  >
+    <div class="h-full">
+      <!--Nav-->
+            <style>
+            .title div {
+                transform: translateX(-66%);
+                transition: 0.3s ease all;
+            }
+            .title .bot {
+                opacity: 0;
+                transition: 0.3s ease all;
+            }
+            .title:hover div {
+                transform: translateX(0);
+            }
+            .title:hover .bot {
+                opacity: 1;
+            }
+            </style>
+      <div class="w-full container mx-auto">
+        <div class="w-full flex items-center justify-between">
+          <a
+            class="title flex items-center text-blue-400 no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
+            href="#"
+          >
+                        Ro<span class="bot">bot</span>
+              <div>
+                <span
+                  class="bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 via-white to-yellow-500"
+                  >Bee</span
+                ><span class="flex-inline text-red-400">X</span>
+              </div>
+            </span>
+          </a>
+
+          <div class="flex w-1/2 justify-end content-center">
+            <a
+              class="inline-block text-blue-300 no-underline hover:text-pink-500 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-125 duration-300 ease-in-out"
+              href="https://www.instagram.com/robeex.drone"
+            >
+              <svg
+                class="fill-current h-7"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 50 50"
+              >
+                <path
+                  d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!--Main-->
+      <div
+        class="container pt-8 md:pt-5 mx-auto flex flex-wrap flex-col md:flex-row items-center"
+      >
+        <!--Left Col-->
+        <div
+          class="flex flex-col mb-16 w-full justify-center lg:items-start overflow-y-hidden"
+        >
+          <h1
+            class="mt-4 mb-24 text-3xl md:text-5xl text-white font-bold text-center opacity-95 md:text-left"
+          >
+                        The Invovator Of NEXT
+          </h1>
+          <h2
+            class="my-4 text-1xl md:text-3xl text-white opacity-75 font-bold text-center md:text-left"
+          >
+            Contact
+            <span
+              class="flex-inline items-center text-blue-400 no-underline hover:no-underline font-bold"
+            >
+              Ro<span
+                class="bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 via-white to-yellow-500"
+                >Bee</span
+              ><span class="flex-inline text-red-400">X</span>
+            </span>
+            to buy!!
+          </h2>
+          <p
+            class="leading-normal text-base md:text-2xl mb-8 text-center md:text-left"
+          >
+            We love customers ❤️
+          </p>
+
+          <form
+            class="bg-gray-900 opacity-75 w-3/5 shadow-lg rounded-lg px-8 pt-6 pb-8 mb-4"
+          >
+            <div class="mb-4">
+              <label
+                class="block text-blue-300 py-2 font-bold mb-2"
+                for="emailaddress"
+              >
+                Signup 
+              </label>
+              <input
+                class="shadow appearance-none border rounded w-full p-3 text-gray-700 leading-tight focus:ring transform transition hover:scale-105 duration-300 ease-in-out"
+                id="emailaddress"
+                type="text"
+                placeholder="you@somewhere.com"
+              />
+            </div>
+
+            <div class="flex items-center justify-between pt-4">
+              <button
+                class="bg-gradient-to-r from-blue-500 via-blue-400 to-red-400 text-white font-bold py-2 px-4 rounded focus:ring transform transition hover:scale-105 duration-300 ease-in-out"
+                type="button"
+              >
+                SignUp
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <!--Right Col-->
+        <!-- <div class="w-full xl:w-2/5 p-12 overflow-hidden"> -->
+        <!--   <img -->
+        <!--     class="mx-auto w-full md:w-4/5 transform -rotate-6 transition hover:scale-105 duration-700 ease-in-out hover:rotate-6" -->
+        <!--     src="macbook.svg" -->
+        <!--   /> -->
+        <!-- </div> -->
+
+        <div class="mx-auto md:pt-16">
+          <p class="text-blue-400 font-bold pb-8 lg:pb-6 text-center">
+            Download our app:
+          </p>
+          <div
+            class="flex w-full justify-center md:justify-start pb-24 lg:pb-0 fade-in"
+          >
+            <img
+              src="App Store.svg"
+              class="h-12 pr-12 transform hover:scale-125 duration-300 ease-in-out"
+            />
+            <img
+              src="Play Store.svg"
+              class="h-12 transform hover:scale-125 duration-300 ease-in-out"
+            />
+          </div>
+        </div>
+
+        <!--Footer-->
+        <div class="w-full pt-16 pb-6 text-sm text-center md:text-left fade-in">
+          <a class="text-gray-500 no-underline hover:no-underline" href="#"
+                    >&copy; <span id="date-year"></span></a
+          >
+          - RoBeeX
+        </div>
+      </div>
+    </div>
+        <script>document.getElementById('date-year').innerText = new Date().getFullYear()</script>
+  </body>
+</html>
