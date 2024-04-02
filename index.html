@@ -43,158 +43,238 @@
         .title:hover .bot {
           opacity: 1;
         }
+        .bg-gg {
+          /* background: rgb(115 67 67 / 58%) linear-gradient(45deg, #fff088 0%, #fff8f3 100%) repeat scroll 0 0; */
+          /* background: rgb(115 67 67 / 58%) linear-gradient(45deg, #fff088 0%, #fff8f3 100%) repeat scroll 0 0; */
+        }
       </style>
       <div class="pa h-full">
-        <header class="relative shadow-lg px-3 py-2">
-          <nav class="flex justify-between">
-            <div class="w-[130px] md:w-[200px] flex items-center">
-              <img
-                src="./favicon.svg"
-                style="width: 90px"
-                alt="LOGO"
-                srcset=""
-              />
-            </div>
-            <div class="flex items-center gap-3">
-              <div
-                class="navLinks bg-white sm:bg-gray-100 z-10 duration-500 absolute md:static md:w-auto w-full md:h-auto h-[85vh] flex md:items-center gap-[1.5vw] top-[100%] left-[-100%] px-5 md:py-0 py-5"
-              >
-                <ul
-                  class="flex md:flex-row flex-col md:items-center md:gap-[2vw] gap-8"
-                >
-                  <li
-                    class="relative max-w-fit pr-3 md:pr-0 py-1 after:bg-gradient-to-l rounded from-gray-500 to-gray-800 after:absolute after:h-[2px] after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300"
-                  >
-                    <a href="#">Home</a>
-                  </li>
-                  <li
-                    class="relative max-w-fit pr-3 md:pr-0 py-1 after:bg-gradient-to-l rounded from-gray-500 to-gray-800 after:absolute after:h-[2px] after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300"
-                  >
-                    <a href="#">About Us</a>
-                  </li>
-                  <li
-                    class="relative max-w-fit pr-3 md:pr-0 py-1 after:bg-gradient-to-l rounded from-gray-500 to-gray-800 after:absolute after:h-[2px] after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300"
-                  >
-                    <a href="#">Contact us</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="flex items-center gap-2">
+        <div class="bg-gg">
+          <header class="relative px-3 py-2">
+            <nav class="flex justify-between">
+              <div class="w-[130px] md:w-[200px] flex items-center">
                 <img
-                  src="/menu-burger-horizontal-svgrepo-com.svg"
-                  style="width: 44px"
-                  onclick="onMenuToggle(this)"
-                  class="text-[30px] cursor-pointer md:hidden"
+                  src="./favicon.svg"
+                  style="width: 90px"
+                  alt="LOGO"
+                  srcset=""
                 />
-                <script>
-                  function onMenuToggle(e) {
-                    const navlinks = document.querySelector(".navLinks");
-                    e.name = e.name === "menu" ? "close" : "menu";
-                    navlinks.classList.toggle("left-[0%]");
-                  }
-                </script>
               </div>
-            </div>
-          </nav>
-        </header>
-
-        <section class="pa ra lg:tc">
-          <!-- Start Fifth Block -->
-          <div class="a m-auto sa">
-            <div class="m lg:fc _ x ab lg:jc">
-              <div class="ia">
-                <div class="ba">
-                  <h2 class="gb text-6xl font-bold">
-                    <span
-                      class="inline-flex items-center text-blue-400 no-underline hover:no-underline font-bold"
-                      href="#"
-                    >
-                      Ro
-                      <div>
-                        <span
-                          class="bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-yellow-500"
-                          >Bee</span
-                        ><span class="flex-inline text-red-400">X</span>
-                      </div>
-                    </span>
-                    <span class="text-gray-700"> AI </span>
-                  </h2>
-                  <p class="fb ob ml-1">Learning AI, On the fly</p>
-                </div>
-                <div class="l y lg:qc x ja">
-                  <a
-                    href="#1"
-                    class="k la wa xa oa hover:bg-yellow-400 hover:pb wb yb zb hover:cc eb kb text-gray-700"
-                    >Buy now</a
+              <div class="flex items-center gap-3">
+                <div
+                  class="navLinks bg-gray-100 md:bg-transparent z-10 duration-500 absolute md:static md:w-auto w-full md:h-auto h-[85vh] flex md:items-center gap-[1.5vw] top-[100%] left-[-100%] px-5 md:py-0 py-5"
+                >
+                  <ul
+                    class="flex md:flex-row flex-col md:items-center md:gap-[2vw] gap-8 text-4xl md:text-lg"
                   >
-                  <div class="fb kb text-gray-700">From $299</div>
+                    <li
+                      class="relative max-w-fit pr-3 md:pr-0 py-1 after:bg-gradient-to-l rounded from-gray-500 to-gray-800 after:absolute after:h-[2px] after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300"
+                    >
+                      <a href="#">Home</a>
+                    </li>
+                    <li
+                      class="relative max-w-fit pr-3 md:pr-0 py-1 after:bg-gradient-to-l rounded from-gray-500 to-gray-800 after:absolute after:h-[2px] after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300"
+                    >
+                      <a href="#">About Us</a>
+                    </li>
+                    <li
+                      class="relative max-w-fit pr-3 md:pr-0 py-1 after:bg-gradient-to-l rounded from-gray-500 to-gray-800 after:absolute after:h-[2px] after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300"
+                    >
+                      <a href="#">Contact us</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="flex items-center gap-2">
+                  <!-- <img -->
+                  <!--   src="/menu-burger-horizontal-svgrepo-com.svg" -->
+                  <!--   style="width: 44px" -->
+                  <!--   onclick="onMenuToggle(this)" -->
+                  <!--   class="text-[30px] cursor-pointer md:hidden" -->
+                  <!-- /> -->
+
+                  <style>
+                    .line {
+                      transition: 0.3s ease all;
+                    }
+                    .line--1 {
+                      transform-origin: 3px 6px;
+                    }
+                    .line--2 {
+                      opacity: 1;
+                    }
+                    .line--3 {
+                      transform-origin: 3px 18px;
+                    }
+                    svg.active {
+                      .line--1 {
+                        transform: rotate(45deg);
+                      }
+                      .line--2 {
+                        opacity: 0;
+                      }
+                      .line--3 {
+                        transform: rotate(-45deg);
+                      }
+                    }
+                  </style>
+                  <svg
+                    width="44"
+                    height="44"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    onclick="onMenuToggle(this)"
+                    class="text-[30px] cursor-pointer md:hidden"
+                  >
+                    <g clip-path="url(#clip0_429_11066)">
+                      <path
+                        class="line line--1"
+                        d="M3,6  H20"
+                        stroke="#292929"
+                        stroke-width="2.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        class="line line--2"
+                        d="M3,12 H20"
+                        stroke="#292929"
+                        stroke-width="2.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        class="line line--3"
+                        d="M3,18 H20"
+                        stroke="#292929"
+                        stroke-width="2.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_429_11066">
+                        <rect
+                          width="24"
+                          height="24"
+                          fill="white"
+                          transform="translate(0 0.000915527)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <script>
+                    function onMenuToggle(e) {
+                      const navlinks = document.querySelector(".navLinks");
+                      e.name = e.name === "menu" ? "close" : "menu";
+                      navlinks.classList.toggle("left-[0%]");
+                      e.classList.toggle("active");
+                    }
+                  </script>
                 </div>
               </div>
-              <div
-                class=""
-                style="
-                  background: radial-gradient(
-                    rgb(0 0 0 / 9%),
-                    rgba(0, 0, 0, 0.01) 34%,
-                    transparent
-                  );
-                  position: relative;
-                  display: block;
-                "
-              >
-                <img src="./images/robeex-main.webp" alt="Drone" />
+            </nav>
+          </header>
+
+          <section class="ra lg:tc min-h-screen">
+            <!-- Start Fifth Block -->
+            <div class="a m-auto sa">
+              <div class="m lg:fc _ x ab lg:jc">
+                <div class="ia">
+                  <div class="ba">
+                    <h2 class="gb text-6xl font-bold">
+                      <span
+                        class="inline-flex items-center text-blue-400 no-underline hover:no-underline font-bold"
+                        href="#"
+                      >
+                        Ro
+                        <div>
+                          <span
+                            class="bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-yellow-500"
+                            >Bee</span
+                          ><span class="flex-inline text-red-400">X</span>
+                        </div>
+                      </span>
+                      <span class="text-gray-700"> AI </span>
+                    </h2>
+                    <p class="fb ob ml-1">Learning AI, On the fly</p>
+                  </div>
+                  <div class="l y lg:qc x ja">
+                    <a
+                      href="mailto:info@mail.robeex.com"
+                      class="inline-block rounded-full px-6 py-3 bg-yellow-400 text-white  shadow hover:shadow-lg text-lg font-semibold text-gray-700 transition-all duration-300 ease"
+                      >Buy now</a
+                    >
+                    <div class="fb kb text-gray-700">From $199</div>
+                  </div>
+                </div>
+                <div
+                  class="mt-10 pt-10 md:mt-0 md:pt-0"
+                  style="
+                    background: radial-gradient(
+                      rgb(0 0 0 / 9%),
+                      rgba(0, 0, 0, 0.01) 34%,
+                      transparent
+                    );
+                    position: relative;
+                    display: block;
+                  "
+                >
+                  <img src="./images/robeex-main.webp" alt="RoBeeX Drone" />
+                </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </div>
 
         <section class="va lg:uc border-gray-300 border-t-2">
           <!-- Start Third Block -->
-          <div class="a e sa">
+          <div class="px-10">
             <div class="da lg:ab i lg:f">
               <h2 class="hb sm:db font-bold">
-                Empowering STEM Education Adventures
+                Empowering <b>STEM</b> Education Adventures
               </h2>
               <p class="sm:dc lg:ec xl:oc lg:e eb sm:fb ob">
-                Experience STEM adventures with our innovative mini drone
+                Experience <b>STEM</b> adventures with our innovative mini drone
               </p>
             </div>
-            <div class="m aa lg:sc">
-              <div class="m lg:fc z lg:rc x items-start">
-                <div class="ba lg:xc">
+            <div class="m-auto">
+              <!-- Items  -->
+              <div class="md:flex md:flex-row items-start mb-20">
+                <div class="basis-1/2">
                   <h3 class="cb sm:hb kb">Expandable</h3>
                   <p class="eb ob">
                     Unlock limitless possibilities with our education mini
                     drone's expandable boards, fostering creativity and
-                    innovation in STEM education. Customize your learning
+                    innovation in <b>STEM</b> education. Customize your learning
                     experience and explore various programming concepts with
                     ease.
                   </p>
                 </div>
-                <div class="bg-gray-100">
+                <div class="bg-gray-100 basis-1/2">
                   <img src="./images/robeex-exp-animation.webp" alt="" />
                 </div>
               </div>
 
-              <div class="m lg:fc z lg:rc x">
-                <div class="bg-gray-100 py-20 hidden sm:block">
+              <div class="md:flex md:flex-row items-start mb-20">
+                <div class="bg-gray-100 hidden md:block basis-1/2">
                   <img
                     src="./images/robeex-programming-animation3.webp"
                     alt=""
                   />
                 </div>
-                <div class="ba lg:yc">
+                <div class="basis-1/2">
                   <h3 class="cb sm:hb kb">Learn Programming</h3>
                   <p class="eb ob">
-                    Learn programming with the most used programming languages !
+                    Learn programming with the most used programming languages
+                    like <b>JavaScript, Blockly and Python !</b>
                     <br />
-                    Dive into the fascinating world of drone technology with our
-                    educational mini drone. Master programming skills as you
-                    code your own flight paths, enabling hands-on learning and
-                    real-world applications in STEM education
+                    Master programming skills as you code your own flight paths,
+                    enabling hands-on learning and real-world applications in
+                    <b>STEM</b> education
                   </p>
                 </div>
-                <div class="bg-gray-100 py-20 sm:hidden">
+                <div class="bg-gray-100 md:hidden basis-1/2">
                   <img
                     src="./images/robeex-programming-animation3.webp"
                     alt=""
@@ -202,18 +282,19 @@
                 </div>
               </div>
 
-              <div class="m lg:fc z lg:rc x">
-                <div class="ba lg:xc">
+              <div class="md:flex md:flex-row items-start mb-20">
+                <div class="basis-1/2">
                   <h3 class="cb sm:hb kb">Playfull Toy</h3>
                   <p class="eb ob">
                     Play with RoBeeX!<br />
                     Transform learning into an exciting adventure with our
                     education mini drone! More than just a toy, it inspires
-                    curiosity and exploration while introducing fundamental STEM
+                    curiosity and exploration while introducing fundamental
+                    <b>STEM</b>
                     concepts in a fun and engaging way.
                   </p>
                 </div>
-                <div class="bg-gray-100">
+                <div class="bg-gray-100 basis-1/2">
                   <img src="./images/robeex-boy.webp" alt="" />
                 </div>
               </div>
@@ -254,10 +335,11 @@
                   ></path>
                 </svg>
                 <div class="ba">
-                  <h5 class="cb kb">Machine vision</h5>
+                  <h5 class="cb kb">Camera</h5>
                   <p class="eb ob">
-                    Learn machine vision with most used techonolies aaround the
-                    glob
+                    Offering an onboard camera enables machine vision
+                    capabilities for capturing photos and exploring computer
+                    vision concepts in <b>STEM</b> education.
                   </p>
                 </div>
               </div>
@@ -384,17 +466,9 @@
             border-bottom: 1px solid #e2e8f0;
           }
 
-          .accordion-title {
-            padding: 1rem;
-            text-align: start;
-          }
-
-          .accordion-button {
-            cursor: pointer;
-          }
-
           .accordion-arrow {
             transition: transform 0.3s;
+            transform: rotate(-90deg);
           }
 
           .accordion-content {
@@ -406,8 +480,11 @@
             display: block;
           }
 
+          .accordion-item.accordion-arrow {
+            ttransition: 0.3s ease all;
+          }
           .accordion-item.active .accordion-arrow {
-            transform: rotate(90deg);
+            transform: rotate(0deg);
           }
         </style>
 
@@ -415,119 +492,80 @@
           <h2 class="text-gray-700 text-4xl font-bold my-5">
             Frequently asked questions
           </h2>
-          <div class="accordion w-full">
-            <!-- FAQ Item 1 -->
-            <div class="accordion-item w-full">
-              <h3
-                class="accordion-title flex justify-between items-center font-semibold text-gray-600"
-              >
-                <span class="accordion-button"
-                  >How can I integrate this mini drone into my curriculum?
-                </span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="100%"
-                  height="100%"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="feather feather-chevron-down w-5 h-5"
-                >
-                  <polyline points="6 9 12 15 18 9"></polyline>
-                </svg>
-              </h3>
-              <div class="accordion-content">
-                <p>
-                  Integrating our mini drone into your curriculum is effortless.
-                  We provide comprehensive lesson plans, project ideas, and
-                  resources aligned with STEM education standards. Our
-                  curriculum covers various topics such as programming,
-                  aerodynamics, physics, and robotics, allowing seamless
-                  integration into existing lesson plans or extracurricular
-                  activities.
-                </p>
-              </div>
-            </div>
-
-            <!-- FAQ Item 2 -->
-            <div class="accordion-item">
-              <h3
-                class="accordion-title flex justify-between items-center font-semibold text-gray-600"
-              >
-                <span class="accordion-button"
-                  >Is prior coding experience necessary to use this product?
-                </span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="100%"
-                  height="100%"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="feather feather-chevron-down w-5 h-5"
-                >
-                  <polyline points="6 9 12 15 18 9"></polyline>
-                </svg>
-              </h3>
-              <div class="accordion-content">
-                <p>
-                  No prior coding experience is necessary to use our mini drone.
-                  We offer user-friendly programming interfaces suitable for
-                  beginners, along with step-by-step tutorials and coding
-                  challenges to facilitate learning. Advanced users can delve
-                  into more complex coding concepts, ensuring that learners of
-                  all levels can engage with the product effectively.
-                </p>
-              </div>
-            </div>
-
-            <!-- FAQ Item 3 -->
-            <div class="accordion-item">
-              <h3
-                class="accordion-title flex justify-between items-center font-semibold text-gray-600"
-              >
-                <span class="accordion-button"
-                  >Are there safety features built into the drone?
-                </span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="100%"
-                  height="100%"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="feather feather-chevron-down w-5 h-5"
-                >
-                  <polyline points="6 9 12 15 18 9"></polyline>
-                </svg>
-              </h3>
-              <div class="accordion-content">
-                <p>
-                  Yes, safety is a top priority in our mini drone design. We
-                  have incorporated various safety features to ensure a secure
-                  learning environment. These include propeller guards to
-                  protect against accidental collisions, altitude hold for
-                  stable flight, emergency stop functionalities, and
-                  user-friendly controls with multiple flight modes suitable for
-                  different skill levels. Additionally, our instructional
-                  materials emphasize safe flying practices and guidelines for
-                  responsible drone usage.
-                </p>
-              </div>
-            </div>
-          </div>
+          <div class="accordion w-full px-10 cursor-pointer"></div>
         </div>
 
         <script>
+          const parent = document.querySelector(".accordion");
+          parent.innerHTML = [
+            {
+              q: "How can I control RoBeeX ?",
+              a: "Using the RoBeeX platform which is available on Desktop (Windows, MacOS, Linux) and Mobile Devices (Android / iOS)",
+            },
+            {
+              q: "What programming languages are supported ?",
+              a: "Currently we support JavaScript, Blockly and Python, and we're planning to add more languages soon ...",
+            },
+            {
+              q: "Can I do programmings on my phone ?",
+              a: "Yes, you can use all programming utilities available on the RoBeeX platform on your Android / iOS Device",
+            },
+            {
+              q: "Where can I do programming with the drone ?",
+              a: "You can do programming on RoBeeX platform which is available on Desktop (Windows, MacOS, Linux) and Mobile Devices (Android / iOS)",
+            },
+            {
+              q: "Can I use it with the Arduino platform ?",
+              a: "Yes, supporting the Arduino platform will be added soon ...",
+            },
+            {
+              q: "What is the age rating for using the drone ?",
+              a: "Any One +13 years can have fun with RoBeeX",
+            },
+            {
+              q: "Can RoBeeX fly indoors ?",
+              a: "Yes, RoBeeX is safe to fly indoors. RoBeeX can also fly outdoors, but it is only recommended to do so in windless conditions.",
+            },
+            {
+              q: "Is the battery rechargable ?",
+              a: "Yes, it is !",
+            },
+            {
+              q: "Is this water-proof ?",
+              a: "No you should be carefull with water around this thing",
+            },
+          ].map((x) => {
+            return `
+            <div class="accordion-item">
+              <h3
+                class="p-2 text-xl flex justify-between items-center font-semibold text-gray-600"
+              >
+                <span class="accordion-button"
+>${x.q}
+                </span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="100%"
+                  height="100%"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-chevron-down w-5 h-5 accordion-arrow"
+                >
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </h3>
+              <div class="accordion-content text-left">
+                <p>
+${x.a}
+                </p>
+              </div>
+            </div>
+`;
+          });
           const accordionItems = document.querySelectorAll(".accordion-item");
 
           accordionItems.forEach((item) => {
