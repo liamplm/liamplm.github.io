@@ -1,6 +1,6 @@
 <!doctype html>
 <!-- saved from url=(0037)https://preview.launchoice.com/rance/ -->
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
@@ -44,12 +44,21 @@
           opacity: 1;
         }
         .bg-gg {
+          background: linear-gradient(
+              165deg,
+              white 50%,
+              #f3f4f6 50%,
+              #f3f4f6 100%
+            )
+            repeat scroll 0 0;
           /* background: rgb(115 67 67 / 58%) linear-gradient(45deg, #fff088 0%, #fff8f3 100%) repeat scroll 0 0; */
           /* background: rgb(115 67 67 / 58%) linear-gradient(45deg, #fff088 0%, #fff8f3 100%) repeat scroll 0 0; */
         }
       </style>
       <div class="pa h-full">
-        <div class="bg-gg">
+        <div
+          class="bg-gg bg-gradient-to-r from-white from-50% via-gray-100 to-gray-100"
+        >
           <header class="relative px-3 py-2">
             <nav class="flex justify-between">
               <div class="w-[130px] md:w-[200px] flex items-center">
@@ -64,7 +73,7 @@
               </div>
               <div class="flex items-center gap-3">
                 <div
-                  class="navLinks bg-gray-100 md:bg-transparent z-10 duration-500 absolute md:static md:w-auto w-full md:h-auto h-[85vh] flex md:items-center gap-[1.5vw] top-[100%] left-[-100%] px-5 md:py-0 py-5"
+                  class="navLinks opacity-0 md:opacity-100 bg-gray-100 md:bg-transparent z-10 duration-500 absolute md:static md:w-auto w-full md:h-auto h-[85vh] flex md:items-center gap-[1.5vw] top-[100%] left-[-100%] px-5 md:py-0 py-5"
                 >
                   <ul
                     class="flex md:flex-row flex-col md:items-center md:gap-[2vw] gap-8 text-4xl md:text-lg"
@@ -170,6 +179,7 @@
                       const navlinks = document.querySelector(".navLinks");
                       e.name = e.name === "menu" ? "close" : "menu";
                       navlinks.classList.toggle("left-[0%]");
+                      navlinks.classList.toggle("opacity-100");
                       e.classList.toggle("active");
                     }
                   </script>
@@ -201,7 +211,9 @@
                     </h2>
                     <p class="fb ob ml-1">Learning AI, On the fly</p>
                   </div>
-                  <div class="l y lg:qc x ja">
+                  <div
+                    class="items-center space-x-4 justify-start hidden lg:flex"
+                  >
                     <a
                       href="mailto:info@mail.robeex.com"
                       class="inline-block rounded-full px-6 py-3 bg-yellow-400 text-white shadow hover:shadow-lg text-lg font-semibold text-gray-700 transition-all duration-300 ease"
@@ -224,16 +236,26 @@
                 >
                   <img src="./images/robeex-main.webp" alt="RoBeeX Drone" />
                 </div>
+                <div
+                  class="flex justify-center items-center space-x-4 lg:hidden"
+                >
+                  <a
+                    href="mailto:info@mail.robeex.com"
+                    class="inline-block rounded-full px-6 py-3 bg-yellow-400 text-white shadow hover:shadow-lg text-lg font-semibold text-gray-700 transition-all duration-300 ease"
+                    >Buy now</a
+                  >
+                  <div class="fb kb text-gray-700">From $199</div>
+                </div>
               </div>
             </div>
           </section>
         </div>
 
-        <section class="va lg:uc border-gray-300 border-t-2">
+        <section class="py-10 lg:py-14 border-gray-300 border-t-2">
           <!-- Start Third Block -->
           <div class="px-10">
-            <div class="da lg:ab i lg:f">
-              <h2 class="hb sm:db font-bold">
+            <div class="da lg:ab i lg:f mb-20">
+              <h2 class="text-4xl sm:text-5xl font-bold">
                 Empowering <b>STEM</b> Education Adventures
               </h2>
               <p class="sm:dc lg:ec xl:oc lg:e eb sm:fb ob">
@@ -253,13 +275,13 @@
                     ease.
                   </p>
                 </div>
-                <div class="bg-gray-100 basis-1/2">
+                <div class="basis-1/2">
                   <img src="./images/robeex-exp-animation.webp" alt="" />
                 </div>
               </div>
 
               <div class="md:flex md:flex-row items-start mb-20">
-                <div class="bg-gray-100 hidden md:block basis-1/2">
+                <div class="hidden md:block basis-1/2">
                   <img
                     src="./images/robeex-programming-animation3.webp"
                     alt=""
@@ -276,7 +298,7 @@
                     <b>STEM</b> education
                   </p>
                 </div>
-                <div class="bg-gray-100 md:hidden basis-1/2">
+                <div class="md:hidden basis-1/2">
                   <img
                     src="./images/robeex-programming-animation3.webp"
                     alt=""
@@ -296,7 +318,7 @@
                     concepts in a fun and engaging way.
                   </p>
                 </div>
-                <div class="bg-gray-100 basis-1/2">
+                <div class="basis-1/2">
                   <img src="./images/robeex-boy.webp" alt="" />
                 </div>
               </div>
@@ -305,11 +327,84 @@
         </section>
         <!-- End Third Block -->
 
-        <section class="va lg:uc _a lg:zc border-gray-300 border-t-2">
+        <style>
+          .specs-container {
+            ul {
+              border-top: 1px solid #e1e1e1;
+              margin: 1rem 2rem 0 2rem;
+              padding: 2rem;
+              padding-bottom: 0;
+              padding-top: 1rem;
+            }
+          }
+        </style>
+        <section
+          class="pt-10 lg:py-10 pb-20 border-gray-300 border-t-2 specs-container"
+        >
+          <div class="text-center">
+            <h2 class="text-gray-700 text-4xl sm:text-5xl font-bold py-5">
+              Specs
+            </h2>
+          </div>
+          <div id="specs-data"></div>
+          <script>
+            const dataContainer = document.querySelector("#specs-data");
+            const data = {
+              General: {
+                Weight: "60 g",
+                Dimensions: "10.3 × 10.3 × 4.7 mm (L×W×H)",
+              },
+              Battery: {
+                Capacity: "1100 mAh",
+                Voltage: "3.7 v",
+                Type: "Li-Po",
+                "Number of cells": "1",
+                Weight: "25 g",
+              },
+              Flight: {
+                "Flight time": "10 min",
+                "Max altitude": "4 m",
+                "Indoors Flyable": "Yes",
+                "Hovering accuracy XY": "0.01 m/s",
+              },
+              "Radio (WiFi)": {
+                "Radio Freq": "2.4 GHz",
+                Power: "19.5dBm",
+                Range: "150 m",
+              },
+            };
+            function itemToHTML(obj) {
+              return [...Object.entries(obj)]
+                .map(([k, v]) => {
+                  return `
+<li>
+    <b>${k}:</b>
+    <span>${v}</span>
+</li>`;
+                })
+                .join("");
+            }
+            dataContainer.innerHTML = [...Object.entries(data)]
+              .map(([k, v]) => {
+                return `
+            <ul>
+              <h3 style="margin-left: -10px" class="text-2xl font-bold">
+${k}
+              </h3>
+${itemToHTML(v)}
+            </ul>`;
+              })
+              .join("");
+          </script>
+        </section>
+
+        <section
+          class="pt-10 lg:py-10 pb-20 lg:zc border-gray-300 border-t-2 hidden"
+        >
           <!-- Start Fourth Block -->
           <div class="a e ta sm:sa">
             <div class="da ab i lg:f">
-              <h2 class="hb sm:db font-bold">Specifications</h2>
+              <h2 class="text-gray-700 text-4xl font-bold">Specifications</h2>
               <p class="sm:dc lg:ec xl:oc e eb sm:fb ob">
                 best compare to any educational drone you every saw
               </p>
@@ -490,12 +585,12 @@
           }
         </style>
 
-        <div class="mx-auto text-center px-25">
-          <h2 class="text-gray-700 text-4xl font-bold my-5">
+        <section class="mx-auto text-center px-25 border-gray-300 border-t-2">
+          <h2 class="text-gray-700 text-4xl sm:text-5xl font-bold my-5">
             Frequently asked questions
           </h2>
           <div class="accordion w-full px-10 cursor-pointer"></div>
-        </div>
+        </section>
 
         <script>
           const parent = document.querySelector(".accordion");
@@ -581,8 +676,6 @@ ${x.a}
             });
           });
         </script>
-
-        <!-- Start Fifth Block -->
       </div>
       <footer class="bg-gray-900 py-8 mt-10" id="about">
         <div
@@ -699,7 +792,7 @@ ${x.a}
         </div>
 
         <div class="a e sa ab mt-10">
-          <div class="l w md:gc y ka md:hc md:ja ib rb">
+          <div class="flex w md:gc y ka md:hc md:ja ib rb">
             <p>Copyright © 2024 RoBeeX. All rights reserved.</p>
           </div>
         </div>
