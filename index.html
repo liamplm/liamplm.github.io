@@ -26,7 +26,7 @@
     <!-- /> -->
     <title>RoBeeX AI Drone</title>
   </head>
-  <body class="bb antialiased text-gray-700 bg-gray-100">
+  <body class="bb antialiased text-gray-700 bg-white">
     <main>
       <style>
         .title div {
@@ -44,15 +44,30 @@
           opacity: 1;
         }
         .bg-gg {
+          /* background: linear-gradient( */
+          /*     165deg, */
+          /*     white 50%, */
+          /*     #f3f4f6 50%, */
+          /*     #f3f4f6 100% */
+          /*   ) */
+          /*   repeat scroll 0 0; */
+          /* background: rgb(115 67 67 / 58%) linear-gradient(45deg, #fff088 0%, #fff8f3 100%) repeat scroll 0 0; */
+          /* background: rgb(115 67 67 / 58%) linear-gradient(45deg, #fff088 0%, #fff8f3 100%) repeat scroll 0 0; */
+          /* background: linear-gradient( */
+          /*     165deg, */
+          /*     white 50%, */
+          /*     #f3f4f6 50%, */
+          /*     #ffffff 100% */
+          /*   ) */
+          /*   repeat scroll 0 0; */
+
           background: linear-gradient(
               165deg,
               white 50%,
-              #f3f4f6 50%,
-              #f3f4f6 100%
-            )
-            repeat scroll 0 0;
-          /* background: rgb(115 67 67 / 58%) linear-gradient(45deg, #fff088 0%, #fff8f3 100%) repeat scroll 0 0; */
-          /* background: rgb(115 67 67 / 58%) linear-gradient(45deg, #fff088 0%, #fff8f3 100%) repeat scroll 0 0; */
+              #ffffff00 50%,
+              #ffffff 100%
+            ),
+            linear-gradient(250deg, #f3f4f6b8 0%, #ffffff 100%);
         }
       </style>
       <div class="pa h-full">
@@ -190,7 +205,7 @@
 
           <section class="ra lg:tc min-h-screen">
             <!-- Start Fifth Block -->
-            <div class="a m-auto sa">
+            <div class="w-full m-auto px-5">
               <div class="m lg:fc _ x ab lg:jc">
                 <div class="ia">
                   <div class="ba">
@@ -223,7 +238,7 @@
                   </div>
                 </div>
                 <div
-                  class="mt-10 pt-10 md:mt-0 md:pt-0"
+                  class="-mx-5 md:mx-0"
                   style="
                     background: radial-gradient(
                       rgb(0 0 0 / 9%),
@@ -251,7 +266,7 @@
           </section>
         </div>
 
-        <section class="py-10 lg:py-14 border-gray-300 border-t-2">
+        <section class="py-10 lg:py-14 border-gray-300 border-t-2 bg-white">
           <!-- Start Third Block -->
           <div class="px-10">
             <div class="da lg:ab i lg:f mb-20">
@@ -275,7 +290,7 @@
                     ease.
                   </p>
                 </div>
-                <div class="basis-1/2">
+                <div class="basis-1/2 -mx-10 md:mx-0">
                   <img src="./images/robeex-exp-animation.webp" alt="" />
                 </div>
               </div>
@@ -298,7 +313,7 @@
                     <b>STEM</b> education
                   </p>
                 </div>
-                <div class="md:hidden basis-1/2">
+                <div class="md:hidden basis-1/2 -mx-10">
                   <img
                     src="./images/robeex-programming-animation3.webp"
                     alt=""
@@ -318,7 +333,7 @@
                     concepts in a fun and engaging way.
                   </p>
                 </div>
-                <div class="basis-1/2">
+                <div class="basis-1/2 -mx-10 md:mx-0">
                   <img src="./images/robeex-boy.webp" alt="" />
                 </div>
               </div>
@@ -329,6 +344,13 @@
 
         <style>
           .specs-container {
+            background: linear-gradient(
+                165deg,
+                #ffffff 0%,
+                #f3f4f6 50%,
+                #f3f4f6 100%
+              )
+              repeat scroll 0 0;
             ul {
               border-top: 1px solid #e1e1e1;
               margin: 1rem 2rem 0 2rem;
@@ -583,9 +605,20 @@ ${itemToHTML(v)}
           .accordion-item.active .accordion-arrow {
             transform: rotate(0deg);
           }
+          .faq-container {
+            background: linear-gradient(
+                345deg,
+                #ffffff 0%,
+                #f3f4f6 50%,
+                #f3f4f6 100%
+              )
+              repeat scroll 0 0;
+          }
         </style>
 
-        <section class="mx-auto text-center px-25 border-gray-300 border-t-2">
+        <section
+          class="mx-auto text-center px-25 border-gray-300 border-t-2 faq-container py-12"
+        >
           <h2 class="text-gray-700 text-4xl sm:text-5xl font-bold my-5">
             Frequently asked questions
           </h2>
@@ -631,8 +664,9 @@ ${itemToHTML(v)}
               q: "Is this water-proof ?",
               a: "No you should be carefull with water around this thing",
             },
-          ].map((x) => {
-            return `
+          ]
+            .map((x) => {
+              return `
             <div class="accordion-item">
               <h3
                 class="p-2 text-xl flex justify-between items-center font-semibold text-gray-600"
@@ -662,7 +696,8 @@ ${x.a}
               </div>
             </div>
 `;
-          });
+            })
+            .join("");
           const accordionItems = document.querySelectorAll(".accordion-item");
 
           accordionItems.forEach((item) => {
@@ -677,7 +712,7 @@ ${x.a}
           });
         </script>
       </div>
-      <footer class="bg-gray-900 py-8 mt-10" id="about">
+      <footer class="bg-gray-900 py-8" id="about">
         <div
           class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8"
         >
