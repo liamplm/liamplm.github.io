@@ -70,8 +70,8 @@
             linear-gradient(250deg, #f3f4f6b8 0%, #ffffff 100%);
         }
         .offset-of-god {
-            position: relative;
-            left: -15px;
+          /* position: relative; */
+          /* left: -15px; */
         }
       </style>
       <div class="pa h-full">
@@ -83,7 +83,7 @@
               <div class="w-[130px] md:w-[200px] flex items-center">
                 <a href="/">
                   <img
-                                        class="offset-of-god"
+                    class="offset-of-god"
                     src="./favicon.svg"
                     style="width: 90px"
                     alt="LOGO"
@@ -208,7 +208,7 @@
             </nav>
           </header>
 
-          <section class="ra lg:tc min-h-screen">
+          <section class="ra lg:tc min-h-screen px-0 md:px-10">
             <!-- Start Fifth Block -->
             <div class="w-full m-auto px-5">
               <div class="m lg:fc _ x ab lg:jc">
@@ -295,8 +295,15 @@
                     ease.
                   </p>
                 </div>
-                <div class="basis-1/2 -mx-20 md:mx-0">
+                <div class="basis-1/2 -mx-20 md:mx-0 overflow-hidden">
                   <img src="./images/robeex-exp-animation.webp" alt="" />
+                  <!-- <video autoplay controls> -->
+                  <!-- <!-- <video poster="./images/robeex-exp-animation-small.webp"> --> -->
+                  <!--   <source -->
+                  <!--     src="./images/robeex-exp-animation.webp" -->
+                  <!--                           type="video/webp" -->
+                  <!--   /> -->
+                  <!-- </video> -->
                 </div>
               </div>
 
@@ -318,7 +325,7 @@
                     <b>STEM</b> education
                   </p>
                 </div>
-                <div class="md:hidden basis-1/2 -mx-20">
+                <div class="md:hidden basis-1/2 -mx-20 overflow-hidden">
                   <img
                     src="./images/robeex-programming-animation3.webp"
                     alt=""
