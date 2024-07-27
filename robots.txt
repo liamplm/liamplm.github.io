@@ -1,0 +1,8 @@
+# Apply rules to all web crawlers
+User-agent: *
+
+# Allow all crawlers to access the entire website
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.robeex.com/sitemap.xml
