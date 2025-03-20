@@ -590,23 +590,6 @@
                             >
                                 Download our app:
                             </p>
-                            <script>
-                                async function donwloadRelase() {
-                                    const e = document.querySelector('#androidLink')
-                                    e.style.opacity = 0.5
-                                    const r = await fetch('/app-version.info.json')
-                                    const v = await r.json()
-                                    const name = `app-${v.commitHash}-${v.tag}.apk`
-                                    const url = `/release/${name}`
-
-                                    e.href = url
-                                    e.style.opacity = 1
-
-                                    document.querySelector('#androidLink').href = url
-                                }
-
-                                donwloadRelase()
-                            </script>
                             <div
                                 class="flex w-full justify-center md:justify-start pb-24 lg:pb-0 fade-in"
                             >
@@ -622,6 +605,23 @@
                                     />
                                 </a>
                             </div>
+                            <script>
+                                async function downloadRelease() {
+                                    const e = document.querySelector('#androidLink')
+                                    e.style.opacity = 0.5
+                                    const r = await fetch('/app-version.info.json')
+                                    const v = await r.json()
+                                    const name = `app-${v.commitHash}-${v.tag}.apk`
+                                    const url = `/release/${name}`
+
+                                    e.href = url
+                                    e.style.opacity = 1
+
+                                    document.querySelector('#androidLink').href = url
+                                }
+
+                                downloadRelease()
+                            </script>
                         </div>
 
                         <!--Right Col-->
