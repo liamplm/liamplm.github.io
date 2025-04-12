@@ -611,7 +611,7 @@
                                     e.style.opacity = 0.5
                                     const r = await fetch('/app-version.info.json')
                                     const v = await r.json()
-                                    const name = `app-${v.commitHash}-${v.tag}.apk`
+                                    const name = (v.apkFileName || `app-${v.commitHash}-${v.tag}`) + '.apk'
                                     const url = `/release/${name}`
 
                                     e.href = url
